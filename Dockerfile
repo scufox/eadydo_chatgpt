@@ -27,6 +27,8 @@ RUN yarn build
 FROM base AS runner
 WORKDIR /app
 
+
+
 RUN apk add proxychains-ng
 
 ENV PROXY_URL=""
